@@ -11,7 +11,7 @@ let arr=[]
 const register=async(req,res)=>{
    try {
        const detail=req.body.state
-       console.log(detail)
+    //    console.log(detail)
     
        const name=detail.Name;
        const email=detail.EMail
@@ -53,7 +53,7 @@ const register=async(req,res)=>{
 
 const Login = async (req,res)=> {
    try {
-       console.log(req.body)
+    //    console.log(req.body)
        const detail=req.body.detail
     
        const userExist=await User.findOne({email:detail.Email})
